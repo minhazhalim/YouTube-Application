@@ -1,0 +1,59 @@
+@mixin font-base {
+     margin: 0px;
+     padding: 0px;
+     line-height: 1.3;
+     font-weight: 600;
+}
+h4 {
+     @include font-base;
+     text-transform: capitalize
+}
+p {
+     @include font-base;
+     color: gray;
+     font-size: 0.7rem;
+     text-transform: capitalize;
+}
+body {
+     background-color: #eee;
+}
+.container {
+     width: 560px;
+     height: 100vh;
+     background-color: #fff;
+     margin: 0px auto;
+}
+header,section {
+     position: fixed;
+     text-align: center;
+     width: 560px;
+     background-color: #fff;
+}
+section {
+     top: 0px;
+}
+.logo {
+     width: 120px;
+     padding: 10px;
+}
+main {
+     padding: 330px 18px 10px;
+}
+article {
+     display: flex;
+     align-items: center;
+     padding: 4px 12px;
+     border: 2px solid white;
+     border-radius: 8px;
+     margin: 0px auto;
+     &:hover {
+          border: 2px solid #ff9999;
+     }
+}
+.thumb {
+     height: 70px;
+     border-radius: 4px;
+}
+.details {
+     padding: 8px 22px;
+}
